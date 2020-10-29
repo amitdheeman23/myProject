@@ -1,0 +1,203 @@
+/* You can add global styles to this file, and also import other style files */
+.crustSize{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  
+  .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* .containe{
+    width: 100%;
+    max-width: 342px;
+  } */
+
+  .selectSizeCrust{
+    width: 100%;
+    max-width: 113px;
+    border: none;
+    background-color: beige;
+  }
+  .bd{
+    display: inline-table;
+  }
+  .card{
+    display: flex;
+    justify-content: space-between;
+  }
+  .crd{
+    background-color: #64f10b!important;
+    font: initial!important;
+
+  }
+  .crds{
+    font: initial!important;
+
+  }
+  .marqImage{
+    width: 100%;
+    max-width: 283px;
+  }
+  .hrs{
+    /* border-top: 5px solid #d9edf7!important; */
+    border: 0;
+    border-top: 1px solid #1da290;
+    margin: 20px 0;
+  }
+  .cnt{
+    width: 100%;
+    max-width: 33px;
+    border-style: groove;
+    text-align: center;
+  }
+
+  .btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid green; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    float: left; /* Float the buttons side by side */
+  }
+  
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .cont{
+    width: 100%;
+    border-style: outset;
+  }
+  
+  .btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #3e8e41;
+  }
+
+
+
+.btn-group button {
+  background-color: #4CAF50; /* Green background */
+  border: 1px solid green; /* Green border */
+  color: white; /* White text */
+  padding: 10px 24px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #3e8e41;
+}
+
+.btndel{
+    display: flex;
+    justify-content: space-between
+}
+.countr{
+  display: flex;
+  justify-content: space-between;
+}
+
+.incrementDecrement{
+  width: 100%;
+  max-width: 26px;
+  border-style: ridge;
+  text-align: center
+}
+
+.imageCard{
+  display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.addcardImage{
+  width: 100%;
+  max-width: 166px;
+  border: 68px;
+  border-radius: 108px;
+  height: 153px;
+}
+
+.chacktoppping{
+  padding: 9px;
+  display: flex;
+  justify-content: space-between;}
+
+.chekbox{
+  width: 100%;
+  padding: 30px;
+}
+
+
+  .labels {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%!important;
+    margin-bottom: 5px!important;
+    font-weight: 100!important;
+    font: initial;
+    color: white;
+}
+
+.fnt{
+  font: initial;
+}
+.fnts{
+  color: rgb(19 161 230);
+}
+.rss{
+  color: rgb(44, 101, 128);
+}
+.rss1{
+  color: rgb(6 19 25)
+}
+.inc{
+  width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ckbox{
+  display: inherit;
+}
+.btns{
+  width: 100%;
+  max-width: 120px;
+  background-color: green;
+  color: wheat;
+}
+.addBtncart{
+  display: flex;
+  justify-content: center;
+}

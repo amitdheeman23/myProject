@@ -1,0 +1,386 @@
+[
+    {
+        "pizzaName": "Margherita",
+        "pizzaCost": 120,
+        "pizzaDetails": "A classic delight with 100% Real mozzarella cheese",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/new_margherita_2502.jpg",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    },
+    {
+        "pizzaName": "Farmhouse",
+        "pizzaCost": 399,
+        "pizzaDetails": "Delightful combination of onion, capsicum, tomato & grilled mushroom",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/farmhouse.png",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    },
+    {
+        "pizzaName": "Veg Extravaganza",
+        "pizzaCost": 459,
+        "pizzaDetails": "Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/new_veg_extravaganza.jpg",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    },
+    {
+        "pizzaName": "Veggie Paradise",
+        "pizzaCost": 399,
+        "pizzaDetails": "The awesome foursome! Golden corn, black olives, capsicum, red paprika",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/new_veggie_paradise.jpg",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    },
+    {
+        "pizzaName": "Cheese n Corn",
+        "pizzaCost": 309,
+        "pizzaDetails": "Sweet & Juicy Golden corn and 100% real mozzarella cheese in a delectable!",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/new_cheese_n_corn.jpg",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    },
+    {
+        "pizzaName": "Pepper Barbecue Chicken",
+        "pizzaCost": 120,
+        "pizzaDetails": "Pepper barbecue chicken for that extra zing",
+        "pizzaSize": [
+            {
+                "size": "Regular"
+            },
+            {
+                "size": "Medium"
+            },
+            {
+                "size": "Large"
+            }
+        ],
+        "crust": [
+            {
+                "name": "Hand-tossed",
+                "price": 80,
+                "value": false
+            },
+            {
+                "name": "Normal",
+                "price": 70,
+                "value": false
+            },
+            {
+                "name": "Cheese burst",
+                "price": 100,
+                "value": false
+            }
+        ],
+        "typeOfPizza": [
+            {
+                "type": "PAN base",
+                "price": 20,
+                "value": false
+            },
+            {
+                "type": "Classic",
+                "price": 30,
+                "value": false
+            }
+        ],
+        "imageOfPizza": "https://images.dominos.co.in/new_pepper_barbeque_chicken.jpg",
+        "count": 1,
+        "topping": [
+            {
+                "topping": "paneer",
+                "price": 50,
+                "value": false
+            },
+            {
+                "topping": "Corn",
+                "price": 20,
+                "value": false
+            },
+            {
+                "topping": "Capsicum",
+                "price": 30,
+                "value": false
+            }
+        ]
+    }
+]

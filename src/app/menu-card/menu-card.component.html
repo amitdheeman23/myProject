@@ -1,0 +1,178 @@
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container" style="height: 150px;">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="assets/image/domi.png" style="width:100%;" class="w3-round"><br><br>
+      <hr class="hrs">
+      <div class="w3-third w3-container w3-margin-bottom cont" *ngFor="let data of addcrad; let i=index;">
+        <img src="assets/image/pizza1.webp" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>{{data?.pizzaName}}</b></p>
+          <p class="fnts">{{data?.pizzaDetails || 'N/A'}}</p>
+          <!-- <p>{{data?.Items || 'N/A'}}</p>  -->
+          <div class="countr">
+            <p class="rss">₹{{(data?.pizzaPrice || data?.TotalAmount) || '0'}}</p>
+          </div>
+          <div class="btndel">
+            <div>
+              <i class="fa fa-trash-o" *ngIf="addcrad[i].count==1" style="font-size:30px;color:red"
+                (click)="addToCratDelete(i,'addcrad')"></i>
+            </div>
+            <div class="inc">
+              <button (click)="decrementSubtoCart(i,'addCard')">-</button>
+              <button>{{data?.count}}</button>
+              <button (click)="incrementAddtoCart(i,'addCard')">+</button>
+            </div>
+          </div>
+          <hr class="hrs">
+        </div>
+      </div>
+      <div class="w3-third w3-container w3-margin-bottom cont" *ngFor="let item of customis; let i=index;">
+        <img src="assets/image/pizza1.webp" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>{{item?.pizzaName || 'N/A'}}</b></p>
+          <p class="fnts">{{item?.pizzaDetails || 'N/A'}}</p>
+          <b>Added Toppings</b>
+          <p>{{item?.items || 'N/A'}}</p>
+          <div class="countr">
+            <p class="rss">₹{{(item?.customisePrice|| item?.pizzaPrice) || '0'}}</p>
+          </div>
+          <div class="btndel">
+            <div>
+              <i class="fa fa-trash-o" *ngIf="item?.counts==1" style="font-size:30px;color:red"
+                (click)="addToCratDelete(i,'coustomise')"></i>
+            </div>
+            <div class="inc">
+              <button (click)="decrementSubtoCart(i,'coustomise')">-</button>
+              <button>{{item?.counts}}</button>
+              <button (click)="incrementAddtoCart(i,'coustomise')">+</button>
+            </div>
+          </div>
+          <hr class="hrs">
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+    title="close side menu" id="myOverlay"></div>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px">
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+          class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1><b>My Domino's</b></h1>
+        <div class="container">
+          <img src="assets/image/pizza4.webp" alt="Nature" style="width:100%;">
+        </div>
+      </div>
+    </header>
+    <hr class="hrs">
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+      <div class="w3-third w3-container w3-margin-bottom" *ngFor="let data of pizzaDetails; let i=index">
+        <img src="{{data?.imageOfPizza}}" alt="Norway" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container w3-white">
+          <p><b>{{data?.pizzaName}}</b></p>
+          <p class="fnts">{{data?.pizzaDetails || 'N/A'}}</p>
+          <p class="rss">₹{{data?.pizzaCost || '0'}}</p>
+          <div class="card">
+            <button type="button" class="btn btn-info btn-lg crds" data-toggle="modal" data-target="#myModal"
+              (click)="customiseToCart(data)">CUSTOMISE</button>
+            <button type="button" class="btn btn-info btn-lg crd " (click)="addToCrat(data,i)">ADD TO CART
+            </button>
+          </div>
+          <hr class="hrs">
+          <hr class="hrs">
+        </div>
+      </div>
+    </div>
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <h4><b>About Me</b></h4>
+      <p class="fnt">On May 12, 1983, Domino's opened its first international store,
+        in Winnipeg, Manitoba, Canada.[15] That same year, Domino's opened its 1000th
+        store, its first in Vancouver, Washington. In 1985, the chain opened their
+        first store in the United Kingdom in Luton.[16] Also, in 1985, Domino's
+        opened their first store in Tokyo, Japan. In 1993, they became the second
+        American franchise to open in the Dominican Republic and the first one to
+        open in Haiti, under the direction of entrepreneur Luis de Jesús
+        Rodríguez.[17] By 1995, Domino's had expanded to 1,000 international
+        locations. In 1997, Domino's opened its 1,500th international location,
+        opening seven stores in one day across five continents.[18] By 2014, the
+        company had grown to 6,000 international locations and was planning to
+        expand to pizza's birthplace, Italy; this was achieved on October 5, 2015,
+        in Milan, with their first Italian location. CEO Patrick Doyle, in May 2014,
+        said the company would
+        concentrate on its delivery model there.[19].</p>
+      <hr class="hrs">
+      <hr class="hrs">
+    </div>
+    <!-- Footer -->
+
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp"
+        title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+    <!-- End page content -->
+  </div>
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: #a9a9a9f7;">
+        <div class="modal-header" style="background-color: darkgray;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">CUSTOMISE YOUR PIZZA</h4>
+        </div>
+        <div class="imageContainer">
+          <div class="imageCard">
+            <img src="{{customiseData?.imageOfPizza}}" class="addcardImage">
+          </div>
+          <div class="chekbox">
+            <label for="vehicle3"> Type of topping</label><br>
+            <div class="chacktoppping">
+              <span class="ckbox" *ngFor="let items of customiseData?.topping">
+                <input type="checkbox" value="{{items?.topping}}"
+                  (change)="onCheckboxChange($event,items?.price,items?.topping)" style="margin-top: 2px;">
+                <label for="vehicle1" class="labels">{{items?.price}}/{{items?.topping}}</label>
+              </span>
+            </div>
+            <hr class="hrs">
+            <label for="vehicle3"> Type of crusts</label><br>
+            <div class="chacktoppping" class="labels">
+              <span class="ckbox" *ngFor="let items of customiseData?.crust">
+                <input type="checkbox" value="{{items?.name}}"
+                  (change)="onCheckboxChange($event,items?.price,items?.name)" style="margin-top: 2px;">
+                <label for="vehicle1" class="labels">{{items?.price}}/{{items?.name}}</label>
+              </span>
+            </div>
+            <hr class="hrs">
+            <label for="vehicle3"> Type of pizza</label><br>
+            <div class="chacktoppping">
+              <span class="ckbox" *ngFor="let items of customiseData?.typeOfPizza">
+                <input type="checkbox" value="{{items?.type}}"
+                  (change)="onCheckboxChange($event,items?.price,items?.type)" style="margin-top: 2px;">
+                <label for="vehicle1" class="labels">{{items?.price}}/{{items?.type}}</label>
+              </span>
+            </div>
+            <hr class="hrs">
+            <div class="total">
+              <p class="rss1">₹{{customiseData?.pizzaPrice || customiseData?.pizzaCost}}</p>
+            </div>
+          </div>
+          <div class="addBtncart">
+            <button class="btns" data-dismiss="modal" (click)="addToCustomisecart()">ADD TO CART</button>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
